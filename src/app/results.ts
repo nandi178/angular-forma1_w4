@@ -7,7 +7,7 @@ export interface Result {
   podium: string[]
 }
 
-export const results: Result[] = [
+export const eredmenyek: Result[] = [
   {
     grandPrix: 'Bahrain',
     date: new Date('28 Mar 2021'),

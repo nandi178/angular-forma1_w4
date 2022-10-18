@@ -4,7 +4,7 @@
     <div class="text">EREDMÉNYEK</div>
   </div>
   <div class="table">        
-    <app-results-table></app-results-table> <!-- [results]="results" [(selectedResultIndex)]="selectedResultIndex"> --> 
+    <app-results-table [results]="aktualisEredmeny" [(selectedResultIndex)]="selectedResultIndex"></app-results-table> <!--  > --> 
   </div>
-  <!--<app-podium *ngIf="selectedResultIndex !== undefined" [drivers]="results[selectedResultIndex].podium" (close)="selectedResultIndex = undefined"></app-podium> -->
+  <app-podium *ngIf="selectedResultIndex !== undefined" [drivers]="aktualisEredmeny[selectedResultIndex].podium" (close)="selectedResultIndex = undefined"></app-podium>
 </div>

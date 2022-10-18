@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { Result, results } from '../results';
+import { Result, eredmenyek } from '../results';
 
 @Component({
   selector: 'app-results-table',
@@ -14,9 +14,9 @@ export class ResultsTableComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    for (let index = 0; index < results.length; index++) {
-      this.results.push(results[index]);
-    }
+    //for (let index = 0; index < eredmenyek.length; index++) {
+    //  this.results.push(eredmenyek[index]);
+    //}
   }
 
   selected(index: number) {

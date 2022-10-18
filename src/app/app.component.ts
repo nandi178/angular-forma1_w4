@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Result, eredmenyek } from './results';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-forma1';
+  aktualisEredmeny = eredmenyek;
+  selectedResultIndex: number | undefined;
 }
